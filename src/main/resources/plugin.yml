@@ -1,7 +1,11 @@
 name: GamemodeCommand
-version: '${version}'
+version: 1.0.0
 main: de.muv1n.gamemodecommand.GamemodeCommand
 api-version: 1.18
-prefix: §7[§4Gamemode Command§7]
-authors: [ MuV1N ]
 description: With this Plugin you can use /gm <0,1,2,3> <Player>, to switch your gamemode
+commands:
+  gm:
+    permission: gamemode.change
+permissions:
+  gamemode.change:
+    default: op
